@@ -29,12 +29,12 @@ const App = () => {
     <Provider store={store}>
    <div className="boxes">
       <div className="box">
-        <Header  />
+        <Header />
         <AddedFeatures car={state.car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
-        <Total car={state.car} additionalPrice={state.additionalPrice} />
+        <AdditionalFeatures />
+        <Total />
       </div>
     </div>
     </Provider>
