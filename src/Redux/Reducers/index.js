@@ -23,10 +23,15 @@ export const featuresReducer = (state = initialState, action) => {
     case ADD_FEATURE:
       return {
         ...state,
-        car.features: [
-          ...state.car.features,
-          action.payload
-        ]
+        car: {
+          ...state.car,
+          features: [
+            ...state.car.features,
+            action.payload
+          ]
+        }
+
+       
       };
     case REMOVE_FEATURE:
       return state;

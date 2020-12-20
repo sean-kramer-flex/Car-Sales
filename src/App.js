@@ -1,4 +1,6 @@
 import React from 'react';
+import { Provider } from 'react-redux'
+import store from './Redux/Store/reduxStore'
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
@@ -24,9 +26,10 @@ const App = () => {
   };
 
   return (
-    <div className="boxes">
+    <Provider store={store}>
+   <div className="boxes">
       <div className="box">
-        <Header car={state.car} />
+        <Header  />
         <AddedFeatures car={state.car} />
       </div>
       <div className="box">
@@ -34,6 +37,8 @@ const App = () => {
         <Total car={state.car} additionalPrice={state.additionalPrice} />
       </div>
     </div>
+    </Provider>
+ 
   );
 };
 
