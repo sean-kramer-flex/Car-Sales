@@ -24,6 +24,7 @@ const App = () => {
   //     { id: 4, name: 'Rear spoiler', price: 250 }
   //   ]
   // };
+  console.log('store from app: ', store.getState());
 
   return (
     <Provider store={store}>

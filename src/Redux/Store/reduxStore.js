@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import { featuresReducer } from '../Reducers/index'
 
-import {logger} from 'redux-logger'
+import logger from 'redux-logger'
 
 
 
